@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Orin's Bakehouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Orin's Bakehouse</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+      <span class="cart-badge">🧺 <span id="cartCount">0</span></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="box">
+      <div>
+        <h2>Contact us</h2>
+        <p>Want a cake for a party or just want to say hi? Send a message.</p>
+        <form id="contactForm">
+          <input type="text" id="nameInput" placeholder="Your name">
+          <input type="email" id="emailInput" placeholder="Your email">
+          <textarea id="messageInput" placeholder="Write your message"></textarea>
+          <button type="button" onclick="sendMessage()">Send</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+      <div>
+        <p><strong>Address:</strong> 21 Gulshan Avenue, Dhaka</p>
+        <p><strong>Phone:</strong> +880 1894893122</p>
+        <p><strong>Email:</strong> natasha26n2003@gmail.com</p>
+        <img src="storefront.jpg" alt="Bakery storefront">
+        <img src="counter.jpg" alt="Bakery counter" class="small-image">
+      </div>
+    </section>
+
+    <section class="box">
+      <img src="team-baking.jpg" alt="People baking in the bakery">
+      <div>
+        <h3>Custom orders</h3>
+        <p>We can make cakes for birthdays and special days. Just tell us what you need.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Orin's Bakehouse • 21 Gulshan Avenue • Open daily</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
