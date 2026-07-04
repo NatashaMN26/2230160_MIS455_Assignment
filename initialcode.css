@@ -1,0 +1,21 @@
+:root {
+  --bg: #fff8ee;
+  --card: #ffffff;
+  --text: #2f241d;
+  --muted: #6f5f52;
+  --accent: #c97a2f;
+  --accent-dark: #8f5620;
+  --border: #e8dccf;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 { margin-top: 0; }
+img { width: 100%; display: block; border-radius: 10px; }
