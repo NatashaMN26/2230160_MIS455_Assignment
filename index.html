@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orin's Bakehouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Orin's Bakehouse</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+      <span class="cart-badge">🧺 <span id="cartCount">0</span></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="box">
+      <div>
+        <p class="small">Dhaka bakery</p>
+        <h2>Fresh cakes and bread every day.</h2>
+        <p>We bake simple things with love. Cakes, bread, cookies, and a little bit of sugar on top.</p>
+        <a class="btn" href="products.html">See the menu</a>
+      </div>
+      <img src="frosted layer cake close up.jpg" alt="Cake on a table">
+    </section>
+
+    <section class="box">
+      <img src="bakery-interior.jpg" alt="Inside the bakery">
+      <div>
+        <h3>Our little shop</h3>
+        <p>We keep things small and friendly. The bread is warm, the cake is soft, and the place feels like home.</p>
+      </div>
+    </section>
+
+    <section class="box special">
+      <div>
+        <h3>Today's special</h3>
+        <p>Tap the button to see what is fresh today.</p>
+        <button id="specialBtn" onclick="revealSpecial()">Show special</button>
+      </div>
+      <div id="specialBox" class="hidden">
+        <img src="daily-special.jpg" alt="Pistachio rose cake">
+        <p><strong>Pistachio Rose Cake</strong><br>Soft cake with rose flavor and a light glaze.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Orin's Bakehouse • 21 Gulshan Avenue • Open daily</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
